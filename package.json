@@ -1,0 +1,14 @@
+{
+  "name": "reproductor-electron",
+  "version": "1.0.0",
+  "description": "Reproductor para Spotify, Youtube y la musica de tu PC",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josue y Said",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.1"
+  }
+}
