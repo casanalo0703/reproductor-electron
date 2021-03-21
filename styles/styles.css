@@ -1,0 +1,154 @@
+:root{
+    --background-color: #212B38;
+    --secondary-color: #37565B;
+    --icons-color: #726EFF;
+    --selected-color: #A0D2EB;
+    --pc-color: #845BB3;
+    --spotify-color: #08C6AB;
+    --youtube-color: #F66D65;
+    --song-color: #E5EAF5;
+}
+
+/* General properties */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Comfortaa;
+    list-style: none;
+}
+
+body{
+    background: var(--background-color);
+    position: relative;
+}
+
+/* menu properties */
+
+.menu{
+    position: fixed;
+    width: 3.125rem;
+    height: 100%;
+}
+
+.menu ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul li{
+    cursor: pointer;
+    width: 100%;
+    color: var(--icons-color);
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.title{
+    position: absolute;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 5.625rem;
+    margin-top: 1.8rem;
+    font-size: 2.5rem;
+}
+
+/* card properties */
+
+.cards{
+    position: absolute;
+    display: flex;
+    margin-left: 5.625rem;
+    margin-top: 7rem;
+    width: 90%;
+    color: #fff;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 33.3%;
+    background: var(--secondary-color);
+    margin-right: 2rem;
+    border-radius: 6px;
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.5rem;
+}
+
+.card-title h1{
+    margin-left: 0.5rem;
+}
+
+.card-title i{
+    font-size: 2.5rem;
+}
+
+.card-title.my-pc{
+    color: var(--pc-color);
+}
+
+.card-title.spotify{
+    color: var(--spotify-color);
+}
+
+.card-title.youtube{
+    color: var(--youtube-color);
+}
+
+.music{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.song{
+    display: flex;
+    justify-content: space-around;
+    background: var(--song-color);
+    color: #000;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.song-img{
+    margin: 0.5rem;
+    font-size: 1.7rem;
+    width: 5%;
+    justify-self: center;
+}
+
+.song-info{
+    margin: 0.5rem;
+    margin-right: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.not-login{
+    font-weight: 600;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-login i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.not-music{
+    display: none;
+}

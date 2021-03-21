@@ -4,11 +4,15 @@
   "description": "Reproductor para Spotify, Youtube y la musica de tu PC",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Josue y Said",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^12.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }
